@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Layanan index{% endblock %}
+
+{% block body %}
+    <h1>Layanan index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nama</th>
+                <th>Deskripsi</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for layanan in layanans %}
+            <tr>
+                <td>{{ layanan.id }}</td>
+                <td>{{ layanan.nama }}</td>
+                <td>{{ layanan.deskripsi }}</td>
+                <td>
+                    <a href="{{ path('layanan_show', {'id': layanan.id}) }}">show</a>
+                    <a href="{{ path('layanan_edit', {'id': layanan.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('layanan_new') }}">Create new</a>
+{% endblock %}

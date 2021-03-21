@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Instansi{% endblock %}
+
+{% block body %}
+    <h1>Create new Instansi</h1>
+
+    {{ include('instansi/_form.html.twig') }}
+
+    <a href="{{ path('instansi_index') }}">back to list</a>
+{% endblock %}

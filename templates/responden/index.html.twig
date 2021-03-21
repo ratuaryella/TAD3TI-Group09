@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Responden index{% endblock %}
+
+{% block body %}
+    <h1>Responden index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Jk</th>
+                <th>Pendidikan</th>
+                <th>Pekerjaan</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for responden in respondens %}
+            <tr>
+                <td>{{ responden.id }}</td>
+                <td>{{ responden.nama }}</td>
+                <td>{{ responden.umur }}</td>
+                <td>{{ responden.jk }}</td>
+                <td>{{ responden.pendidikan }}</td>
+                <td>{{ responden.pekerjaan }}</td>
+                <td>
+                    <a href="{{ path('responden_show', {'id': responden.id}) }}">show</a>
+                    <a href="{{ path('responden_edit', {'id': responden.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('responden_new') }}">Create new</a>
+{% endblock %}

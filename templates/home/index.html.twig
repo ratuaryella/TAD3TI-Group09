@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sistem Kepuasan Masyarakat{% endblock %}
+
+{% block body %}
+<style>
+    /*.example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }*/
+    /*.example-wrapper code { background: #F5F5F5; padding: 2px 6px; }*/
+    .container{
+        margin-top: 80px;
+        display: flex;
+    }
+    p{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+</style>
+
+{#<div class="wrapper">#}
+{#    <h1>Hello {{ controller_name }}! ✅</h1>#}
+
+{#    This friendly message is coming from:#}
+{#    <ul>#}
+{#        <li>Your controller at <code><a href="{{ 'E:/Kuliah/Semester 6/TA-2/FIX/sikemas/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>#}
+{#        <li>Your template at <code><a href="{{ 'E:/Kuliah/Semester 6/TA-2/FIX/sikemas/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>#}
+{#    </ul>#}
+    <div class="home">
+        <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+        <div class="container d-flex align-items-center">
+            <div class="row">
+                <div class="col-md-6 col-sm-1">
+                    <h1 class="font-weight-bold">Sistem Informasi Survei Kepuasan Masyarakat PEMKAB TOBASA</h1>
+                    <p align="justify">
+                        Survei ini bertujuan untuk mengetahui gambaran secara objektif mengena kepuasan masyarakat
+                        terhadap unit penyelenggara pelayanan publik pada pemerintah Kabupaten Tobasa
+                    </p>
+                    <p align="justify">
+                        Hasil survei ini sangat bermanfaat bagi Pemerintah dalam rangka meningkatkan kualitas pelayanan
+                        publik bagi pemerintahan Kabupaten Tobasa.
+                    </p>
+                        <a href="{{ path('start_page') }}"><button class="button shadow p-3 mb-5 rounded">Mulai Survei</button></a>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img class="img-fluid" alt="Illustration" src="{{ asset('build/img/illustrasion.png') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+{#</div>#}
+{% endblock %}

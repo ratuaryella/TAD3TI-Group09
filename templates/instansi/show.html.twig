@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Instansi{% endblock %}
+
+{% block body %}
+    <h1>Instansi</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ instansi.id }}</td>
+            </tr>
+            <tr>
+                <th>Nama</th>
+                <td>{{ instansi.nama }}</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>{{ instansi.alamat }}</td>
+            </tr>
+            <tr>
+                <th>Nomor_kontak</th>
+                <td>{{ instansi.nomorKontak }}</td>
+            </tr>
+            <tr>
+                <th>Nama_pimpinan</th>
+                <td>{{ instansi.namaPimpinan }}</td>
+            </tr>
+            <tr>
+                <th>Tingkat</th>
+                <td>{{ instansi.tingkat }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('instansi_index') }}">back to list</a>
+
+    <a href="{{ path('instansi_edit', {'id': instansi.id}) }}">edit</a>
+
+    {{ include('instansi/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Responden{% endblock %}
+
+{% block body %}
+    <h1>Responden</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ responden.id }}</td>
+            </tr>
+            <tr>
+                <th>Nama</th>
+                <td>{{ responden.nama }}</td>
+            </tr>
+            <tr>
+                <th>Umur</th>
+                <td>{{ responden.umur }}</td>
+            </tr>
+            <tr>
+                <th>Jk</th>
+                <td>{{ responden.jk }}</td>
+            </tr>
+            <tr>
+                <th>Pendidikan</th>
+                <td>{{ responden.pendidikan }}</td>
+            </tr>
+            <tr>
+                <th>Pekerjaan</th>
+                <td>{{ responden.pekerjaan }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('responden_index') }}">back to list</a>
+
+    <a href="{{ path('responden_edit', {'id': responden.id}) }}">edit</a>
+
+    {{ include('responden/_delete_form.html.twig') }}
+{% endblock %}

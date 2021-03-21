@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Responden{% endblock %}
+
+{% block body %}
+    <h1>Create new Responden</h1>
+
+    {{ include('responden/_form.html.twig') }}
+
+    <a href="{{ path('responden_index') }}">back to list</a>
+{% endblock %}

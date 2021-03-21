@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sistem Kepuasan Masyarakat{% endblock %}
+
+{% block body %}
+    <h1>Pertanyaan index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Pertanyaan</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for pertanyaan in pertanyaans %}
+            <tr>
+                <td>{{ pertanyaan.pertanyaan }}</td>
+                <td>
+                    <label>
+                        <input type="radio" name="data[u1]" id="u1" value="1">a. Tidak Sesuai
+                    </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="data[u1]" id="u1" value="2">b. Kurang Sesuai
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="data[u1]" id="u1" value="3">c. Sesuai
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="data[u1]" id="u1" value="4">d. Sangat Sesuai
+                        </label>
+{#                    <select>#}
+{#                        <option>a. Tidak Baik </option>#}
+{#                        <option>b. Kurang Baik </option>#}
+{#                        <option>c. Baik </option>#}
+{#                        <option>d. Sangat Baik</option>#}
+{#                    </select>#}
+{#                    <a href="{{ path('pertanyaan_show', {'id': pertanyaan.id}) }}">show</a>#}
+{#                    <a href="{{ path('pertanyaan_edit', {'id': pertanyaan.id}) }}">edit</a>#}
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

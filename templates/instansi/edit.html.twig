@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Instansi{% endblock %}
+
+{% block body %}
+    <h1>Edit Instansi</h1>
+
+    {{ include('instansi/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('instansi_index') }}">back to list</a>
+
+    {{ include('instansi/_delete_form.html.twig') }}
+{% endblock %}
