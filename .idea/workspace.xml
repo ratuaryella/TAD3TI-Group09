@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35eb31e7-8832-4b73-b333-e91fcca26b3c" name="Default Changelist" comment="" />
+    <list default="true" id="35eb31e7-8832-4b73-b333-e91fcca26b3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/InstansiCrudController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/LayananCrudController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/PertanyaanCrudController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/RespondenCrudController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sikemas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sikemas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Instansi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Instansi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +42,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -131,17 +157,30 @@
       <path value="$PROJECT_DIR$/vendor/symfony/ux-chartjs" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pz1wPLKlTCuUJWod55jUSZc5kP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -179,11 +218,15 @@
       <workItem from="1616190545592" duration="15063000" />
       <workItem from="1616226105855" duration="5392000" />
       <workItem from="1616237535572" duration="10797000" />
+      <workItem from="1617321810811" duration="7042000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="793" y="203" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1616313740082">
@@ -206,10 +249,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="724" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1616199452292" />
-    <state x="909" y="251" key="NewPhpClassDialog" timestamp="1616197021610">
+    <state x="909" y="251" key="NewPhpClassDialog" timestamp="1617307895258">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="909" y="251" key="NewPhpClassDialog/0.0.1536.864@0.0.1536.864" timestamp="1616197021610" />
+    <state x="909" y="251" key="NewPhpClassDialog/0.0.1536.864@0.0.1536.864" timestamp="1617307895258" />
     <state x="848" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1616226111395">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -218,6 +261,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1616211483582" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1617322279551">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1617322279551" />
     <state x="875" y="348" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1616203612109">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
