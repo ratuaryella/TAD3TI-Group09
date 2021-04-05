@@ -3,41 +3,69 @@
 {% block title %}Sistem Kepuasan Masyarakat{% endblock %}
 
 {% block body %}
-    <h1>Survei</h1>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .box-1{
+                background-color: #F2DEDE !important;
+                border: 1px solid #FCAEAE;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+                border-radius: 12px;
+                color: #A94442;
+            }
+
+            .box-2{
+                background-color: white !important;
+                border: 1px solid whitesmoke;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+                border-radius: 12px;
+            }
+            .container{
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+
     <div class="container">
-        <form action="/jawab" method="post">
-            <input type="text" name="responden">
+        <h1 style="text-align: center">Sistem Informasi Survei Kepuasan Masyarakat Pemerintahan Kabupaten Tobasa</h1>
+        <div class="jumbotron box-1 text-left">
+            <h3>Perhatian</h3>
+            <ul>
+                <li>Survei ini bertujuan untuk mengetahui gambaran secara objektif mengenai kepuasan masyarakat terhadap unit penyelenggara pelayanan publik pada pemerintah Kabupaten Tobasa. Hasil survei ini sangat bermanfaat bagi Pemerintah dalam rangka meningkatkan kualitas pelayanan publik Pemerintahan Kabupaten Tobasa.</li>
+                <li>Survei ini tidak ada hubungannya dengan pajak atau politik. </li>
+                <li>Pilih salah satu huruf sesuai jawaban Saudara.</li>
+            </ul>
+        </div>
 
+        <div class="jumbotron box-2">
             {% for pertanyaan in pertanyaans %}
-                <tr>
-                    <td>{{ pertanyaan.pertanyaan }}</td>
-
-                    <td>
-                        <div class="radio">
-                        <label>
-                            <input type="radio" name="data{{ jawaban }}" id="u1" value="1">a. Tidak Sesuai
-                        </label>
-                        </div>
-                                <input type="radio" name="data{{ jawaban }}" id="u1" value="2">b. Kurang Sesuai
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="data{{ jawaban }}" id="u1" value="3">c. Sesuai
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="data{{ jawaban }}" id="u1" value="4">d. Sangat Sesuai
-                            </label>
-                        </div>
-                        <input type="hidden" name="{{jawaban}}" value="{{pertanyaan.id}}"/>
-                    </td>
-                </tr>
+                <div><strong>{{ pertanyaan.pertanyaan }}</strong></div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="data{{ jawaban }}" id="u1" value="1">a. Tidak Sesuai
+                    </label>
+                </div>
+                <input type="radio" name="data{{ jawaban }}" id="u1" value="2">b. Kurang Sesuai
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="data{{ jawaban }}" id="u1" value="3">c. Sesuai
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="data{{ jawaban }}" id="u1" value="4">d. Sangat Sesuai
+                    </label>
+                </div>
+                <input type="hidden" name="{{jawaban}}" value="{{pertanyaan.id}}"/>
                 {% set jawaban = jawaban + 1 %}
             {% endfor %}
             <br>
             <input type="hidden" name="jawaban" value="{{jawaban}}"/>
             <input type="submit" name="env" value="submit" class="btn btn-lg btn-primary active mt-4">
-        </form>
+            </form>
+        </div>
     </div>
 
 {% endblock %}
