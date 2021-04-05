@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\JawabanRepository;
 use Doctrine\ORM\Mapping as ORM;
+use PhpParser\Node\Scalar\String_;
 
 /**
  * @ORM\Entity(repositoryClass=JawabanRepository::class)
@@ -89,5 +90,11 @@ class Jawaban
         $this->tanggal = $tanggal;
 
         return $this;
+    }
+    public function __toString(){
+        // to show the name of the Category in the select
+        return strval($this->jawaban);
+        // to show the id of the Category in the select
+//         return $this->id;
     }
 }

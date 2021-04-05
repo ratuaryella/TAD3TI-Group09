@@ -19,6 +19,14 @@ class RespondenRepository extends ServiceEntityRepository
         parent::__construct($registry, Responden::class);
     }
 
+    public function countAllResponden()
+    {
+        $queryBuilder = $this->createQueryBuilder('r');
+        $queryBuilder->select('COUNT(r.id) as value');
+
+        return $queryBuilder->getQuery()->getOneOrNullResult();
+    }
+
     // /**
     //  * @return Responden[] Returns an array of Responden objects
     //  */

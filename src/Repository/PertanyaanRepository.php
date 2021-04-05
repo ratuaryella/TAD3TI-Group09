@@ -19,6 +19,15 @@ class PertanyaanRepository extends ServiceEntityRepository
         parent::__construct($registry, Pertanyaan::class);
     }
 
+    public function findOneById($value): ?Pertanyaan
+    {
+        return $this->createQueryBuilder('p')
+            ->andWhere('p.id = :val')
+            ->setParameter('val', $value)
+            ->getQuery()
+            ->getOneOrNullResult()
+            ;
+    }
     // /**
     //  * @return Pertanyaan[] Returns an array of Pertanyaan objects
     //  */

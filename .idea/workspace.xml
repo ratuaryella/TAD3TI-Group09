@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35eb31e7-8832-4b73-b333-e91fcca26b3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/LayananCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/LayananCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/RespondenCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/RespondenCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Layanan.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Layanan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Jawaban.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Jawaban.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PertanyaanRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PertanyaanRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/RespondenRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/RespondenRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/start.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/start.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/survei.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/survei.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +175,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Kuliah\Semester 6\TA-2\FIX\sikemas\templates\bundles\EasyAdminBundle" />
       <recent name="E:\Kuliah\Semester 6\TA-2\FIX\sikemas\public\build" />
       <recent name="E:\Kuliah\Semester 6\TA-2\FIX\sikemas\templates\assets" />
     </key>
@@ -200,7 +207,9 @@
       <workItem from="1616190545592" duration="15063000" />
       <workItem from="1616226105855" duration="5392000" />
       <workItem from="1616237535572" duration="10797000" />
-      <workItem from="1617321810811" duration="13251000" />
+      <workItem from="1617321810811" duration="18122000" />
+      <workItem from="1617546674720" duration="2427000" />
+      <workItem from="1617586449008" duration="9495000" />
     </task>
     <servers />
   </component>
@@ -235,18 +244,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="909" y="251" key="NewPhpClassDialog/0.0.1536.864@0.0.1536.864" timestamp="1617307895258" />
-    <state x="848" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1616226111395">
+    <state x="848" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1617547518259">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="848" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1616226111395" />
+    <state x="848" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1617547518259" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1616211483582">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1616211483582" />
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1617322279551">
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1617591696479">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1617322279551" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1617591696479" />
     <state x="875" y="348" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1616203612109">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

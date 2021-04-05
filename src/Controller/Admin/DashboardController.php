@@ -6,6 +6,7 @@ use App\Entity\Instansi;
 use App\Entity\Layanan;
 use App\Entity\Pertanyaan;
 use App\Entity\Responden;
+use App\Repository\RespondenRepository;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -14,12 +15,23 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DashboardController extends AbstractDashboardController
 {
+    protected RespondenRepository $respondenRepository;
+
+    public function __construct(
+        RespondenRepository $respondenRepository
+    )
+    {
+        $this->respondenRepository = $respondenRepository;
+    }
     /**
      * @Route("/admin", name="admin")
      */
     public function index(): Response
     {
-        return parent::index();
+        return $this->render('bundles/EasyAdminBundle/welcome.html.twig',[
+                'countResponden' => $this->respondenRepository->countAllResponden()
+            ]);
+//        return parent::index();
     }
 
     public function configureDashboard(): Dashboard
