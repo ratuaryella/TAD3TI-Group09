@@ -40,6 +40,8 @@
         </div>
 
         <div class="jumbotron box-2">
+            <form action="/jawab" method="POST">
+            <strong>Nomor Buku Tamu     :   </strong><input type="text" name="responden">
             {% for pertanyaan in pertanyaans %}
                 <div><strong>{{ pertanyaan.pertanyaan }}</strong></div>
                 <div class="radio">
