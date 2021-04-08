@@ -10,19 +10,39 @@
 
     <div class="container">
         <div class="row">
-            <h1>Dashboard</h1>
+            <h1>Rekapitulasi Hasil Survei</h1>
         </div>
         <div class="row mt-3">
-            <div class="col-6 alert-success">
-                <span class="display-3">{{ countResponden['value'] }}</span> Responden
+            <div class="col-4 alert-success">
+                <span class="display-4">{{ countResponden['value'] }}</span> Responden
+            </div>
+            <div class="col-4 alert-primary">
+                Nilai IKM
+                <span class="display-4">
+                    <span>{{ getIKM['value'] }}</span>
+                </span>
+            </div>
+            <div class="col-4 alert-danger">
+                Mutu Pelayanan<br>
+                <span class="display-4">
+                    {% if getIKM['value']>= 88.31 %}
+                        Sangat Baik
+                    {% elseif getIKM['value']>= 76.61 and getIKM['value']<= 88.30%}
+                        Baik
+                    {% elseif getIKM['value']>= 65 and getIKM['value']<= 76.60%}
+                        Kurang Baik
+                    {% else %}
+                        Tidak Baik
+                    {% endif %}
+                </span>
             </div>
         </div>
         <div class="row mt-3">
-            <table>
+            <table class="table table-striped">
                 <thead class="thead-dark">
                 <tr>
-                    <th>Unsur Pertanyaan</th>
-                    <th>Nilai Rata Rata</th>
+                    <th>Unsur Pelayanan</th>
+                    <th colspan="2">Nilai Rata Rata</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -30,10 +50,54 @@
                     <tr>
                         <td>{{ IKMQuestion['desc'] }}</td>
                         <td>{{ IKMQuestion['value'] }}</td>
+                        {% if IKMQuestion['value'] >= 3.53%}
+                            <td> Sangat Baik </td>
+                        {% elseif IKMQuestion['value'] >= 3.06 and IKMQuestion['value'] <= 3.52%}
+                            <td> Baik </td>
+                        {% elseif IKMQuestion['value'] >= 2.60 and IKMQuestion['value'] <= 3.05%}
+                            <td> Kurang Baik </td>
+                        {% else %}
+                            <td> Tidak Baik </td>
+                        {% endif %}
                     </tr>
                 {% endfor %}
                 </tbody>
             </table>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Mutu Pelayanan</th>
+                        <th>IKM</th>
+                        <th>Interval</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>A(Sangat Baik)</td>
+                        <td>88.31-100</td>
+                        <td>3.53-4.00</td>
+                    </tr>
+                    <tr>
+                        <td>B(Baik)</td>
+                        <td>76.61-88.30</td>
+                        <td>3.06-3.53</td>
+                    </tr>
+                    <tr>
+                        <td>B(Kurang Baik)</td>
+                        <td>65.00-76.60</td>
+                        <td>2.60-3.06</td>
+                    </tr>
+                    <tr>
+                        <td>B(Tidak Baik)</td>
+                        <td>25.00-64.99</td>
+                        <td>1.00-2.59</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 {% endblock %}

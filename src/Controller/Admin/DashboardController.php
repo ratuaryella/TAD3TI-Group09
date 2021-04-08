@@ -40,6 +40,7 @@ class DashboardController extends AbstractDashboardController
     {
         return $this->render('bundles/EasyAdminBundle/welcome.html.twig',[
                 'countResponden' => $this->respondenRepository->countAllResponden(),
+                'getIKM'=> $this->jawabanRepository->getIKM(),
                 'pertanyaans' => $this->pertanyaanRepository->findAll(),
                 'IKMQuestions' => $this->jawabanRepository->getIKMperQuestion()
             ]);

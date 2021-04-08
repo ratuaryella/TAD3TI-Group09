@@ -64,4 +64,11 @@ class JawabanRepository extends ServiceEntityRepository
             ->getQuery()
             ->getResult();
     }
+
+    public function getIKM(){
+        $queryBuilder = $this->createQueryBuilder('r');
+        return $queryBuilder->select('(SUM(r.jawaban)/COUNT(r.pertanyaan))*25 as value')
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
 }

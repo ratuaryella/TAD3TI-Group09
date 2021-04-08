@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35eb31e7-8832-4b73-b333-e91fcca26b3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sikemas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sikemas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RespondenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RespondenController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Responden.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Responden.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/JawabanRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/JawabanRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/layout.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/welcome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/welcome.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/start.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/start.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,6 +212,8 @@
       <workItem from="1617546674720" duration="2427000" />
       <workItem from="1617586449008" duration="12660000" />
       <workItem from="1617683801220" duration="34532000" />
+      <workItem from="1617870233370" duration="741000" />
+      <workItem from="1617890384131" duration="6059000" />
     </task>
     <servers />
   </component>
@@ -262,18 +248,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="909" y="251" key="NewPhpClassDialog/0.0.1536.864@0.0.1536.864" timestamp="1617307895258" />
-    <state x="848" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1617684000373">
+    <state x="848" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1617870296851">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="848" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1617684000373" />
+    <state x="848" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1617870296851" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1617695085749">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1617695085749" />
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1617783455803">
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1617890750450">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1617783455803" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1617890750450" />
     <state x="875" y="348" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1616203612109">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
