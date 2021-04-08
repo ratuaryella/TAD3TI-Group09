@@ -13,9 +13,22 @@
             box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
             border-radius: 12px;
             color: #A94442;
+            -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 1s; /* Firefox < 16 */
+            -ms-animation: fadein 1s; /* Internet Explorer */
+            -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
         }
         .container{
             margin-top: 50px;
+        }
+
+        .box-2{
+            background-color: white !important;
+            border: 1px solid whitesmoke;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
         }
     </style>
 </head>
@@ -29,6 +42,12 @@
             <li>Survei ini tidak ada hubungannya dengan pajak atau politik. </li>
             <li>Pilih salah satu huruf sesuai jawaban Saudara.</li>
         </ul>
+    </div>
+    <div class="jumbotron box-2">
+        <form method="post">
+            <label for="inputUsername">Username</label>
+            <input type="text" name="username" id="inputUsername" class="form-control" required autofocus>
+        </form>
     </div>
     <div>
         <a href="{{ path('survei') }}"><button class="button shadow p-3 mb-5 rounded">Selanjutnya</button></a>

@@ -17,5 +17,23 @@
                 <span class="display-3">{{ countResponden['value'] }}</span> Responden
             </div>
         </div>
+        <div class="row mt-3">
+            <table>
+                <thead class="thead-dark">
+                <tr>
+                    <th>Unsur Pertanyaan</th>
+                    <th>Nilai Rata Rata</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for IKMQuestion in IKMQuestions %}
+                    <tr>
+                        <td>{{ IKMQuestion['desc'] }}</td>
+                        <td>{{ IKMQuestion['value'] }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
 {% endblock %}

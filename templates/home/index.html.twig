@@ -15,6 +15,14 @@
         padding: 20px;
     }
 
+    .img{
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+    }
+
 </style>
 
 {#<div class="wrapper">#}
@@ -41,7 +49,7 @@
                     </p>
                         <a href="{{ path('start_page') }}"><button class="button shadow p-3 mb-5 rounded">Mulai Survei</button></a>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12 img">
                     <img class="img-fluid" alt="Illustration" src="{{ asset('build/img/illustrasion.png') }}">
                 </div>
             </div>

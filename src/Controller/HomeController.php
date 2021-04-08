@@ -34,6 +34,10 @@ class HomeController extends AbstractController
      * @Route("/survei", name="survei", methods={"GET"})
      */
     public function survei(){
+        if(!$this->sessionExists()){
+//            $this->addFlash('error','Daftar terlebih dahulu');
+            return $this->redirectToRoute('start_page');
+        }
         $pertanyaanRepository = $this->getDoctrine()->getRepository(Pertanyaan::class);
         $all_pertanyaan = $pertanyaanRepository->findAll();
         $jawaban = 0;
@@ -42,6 +46,7 @@ class HomeController extends AbstractController
             'pertanyaans' => $all_pertanyaan, 'jawaban' =>$jawaban
         ]);
     }
+
     /**
      * @Route("/jawab", name="jawab", methods={"POST"})
      */
@@ -67,7 +72,15 @@ class HomeController extends AbstractController
             $entityManager->flush($jawaban);
         }
 
-        $this->addFlash('success','Terimakasih telah melakukan survei');
+//        $this->addFlash('success','Terimakasih telah melakukan survei');
         return $this->redirectToRoute('home');
+    }
+
+    public function sessionExists(){
+        if(!empty($_SESSION)){
+            return true;
+        }else{
+            return false;
+        }
     }
 }

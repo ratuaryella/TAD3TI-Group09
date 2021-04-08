@@ -3,7 +3,9 @@
 namespace App\Repository;
 
 use App\Entity\Jawaban;
+use App\Entity\Pertanyaan;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Query\AST\Join;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -47,4 +49,19 @@ class JawabanRepository extends ServiceEntityRepository
         ;
     }
     */
+//
+//    public function getIKM(){
+//        $queryBuilder = $this->createQueryBuilder('r');
+//        return $queryBuilder->select('')
+//    }
+
+    public function getIKMperQuestion()
+    {
+        $queryBuilder = $this->createQueryBuilder('r');
+        return $queryBuilder->select('p.deskripsi as desc, ROUND(SUM(r.jawaban)/COUNT(r.pertanyaan),1) as value')
+            ->join('r.pertanyaan', 'p')
+            ->groupBy('r.pertanyaan')
+            ->getQuery()
+            ->getResult();
+    }
 }

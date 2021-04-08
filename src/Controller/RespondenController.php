@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\R\esponden;
+use App\Entity\Responden;
 use App\Form\RespondenType;
 use App\Repository\RespondenRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
